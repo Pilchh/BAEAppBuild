@@ -46,21 +46,21 @@ class TitleBar extends React.Component{
 
         window.addEventListener("resize", checkResizeButton);
 
+        let down = false;
         document.addEventListener("keypress", event => {
 
+            if (down) return;
 
             if (event.key === "f" && event.repeat === false) {
-                if (BrowserWindow.getFocusedWindow().fullScreen === true){
-                    BrowserWindow.getFocusedWindow().fullScreen = false;
-
-                }
-                else {
-                    BrowserWindow.getFocusedWindow().fullScreen = true;
-                }
-
+                BrowserWindow.getFocusedWindow().fullScreen = BrowserWindow.getFocusedWindow().fullScreen !== true;
+                down = true;
             }
 
         });
+
+        document.addEventListener('keyup', function () {
+            down = false;
+        }, false);
     }
 
     render() {
