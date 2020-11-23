@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Switch, Route} from "react-router-dom";
 import './index.css';
-import HomePage from "./HomePage";
-import OverviewPage from "./OverviewPage";
-import QualificationPage from "./QualificationPage";
-import UniversityPage from "./UniversityPage";
-import LocationPage from "./LocationPage";
+import HomePage from "./pages/HomePage";
+import OverviewPage from "./pages/OverviewPage";
+import QualificationPage from "./pages/QualificationPage";
+import UniversityPage from "./pages/UniversityPage";
+import LocationPage from "./pages/LocationPage";
 
 console.log("Read");
 

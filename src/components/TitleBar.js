@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css';
+import '../index.css';
 const { remote } = window.require('electron');
 const { BrowserWindow } = remote;
 
@@ -33,7 +33,6 @@ class TitleBar extends React.Component{
         }
 
         function checkResizeButton(){
-
             if (document.readyState === "complete"){
                 if (!BrowserWindow.getFocusedWindow().isMaximized()){
                     document.body.classList.remove('maximized');
@@ -53,12 +52,10 @@ class TitleBar extends React.Component{
             if (event.key === "f" && event.repeat === false) {
                 if (remote.getCurrentWindow().fullScreen === true){
                     remote.getCurrentWindow().fullScreen = false;
-                    document.body.classList.remove('maximized');
 
                 }
                 else {
                     remote.getCurrentWindow().fullScreen = true;
-                    document.body.classList.add('maximized');
                 }
 
             }

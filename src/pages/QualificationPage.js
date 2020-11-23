@@ -1,10 +1,9 @@
 import React from "react";
-import './index.css';
-import TitleBar from "./TitleBar";
+import '../index.css';
+import TitleBar from "../components/TitleBar";
 import BrandingBarPages from "./BrandingBarPages";
 
-class OverviewPage extends React.Component{
-
+class QualificationPage extends React.Component{
 
     render() {
         return (
@@ -21,4 +20,4 @@ class OverviewPage extends React.Component{
 
 }
 
-export default OverviewPage;
+export default QualificationPage;

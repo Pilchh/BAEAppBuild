@@ -1,9 +1,10 @@
 import React from "react";
-import './index.css';
-import TitleBar from "./TitleBar";
+import '../index.css';
+import TitleBar from "../components/TitleBar";
 import BrandingBarPages from "./BrandingBarPages";
 
-class LocationPage extends React.Component{
+class OverviewPage extends React.Component{
+
 
     render() {
         return (
@@ -20,4 +21,4 @@ class LocationPage extends React.Component{
 
 }
 
-export default LocationPage;
+export default OverviewPage;

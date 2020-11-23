@@ -1,9 +1,9 @@
 import React from "react";
-import './index.css';
-import TitleBar from "./TitleBar";
+import '../index.css';
+import TitleBar from "../components/TitleBar";
 import BrandingBarPages from "./BrandingBarPages";
 
-class UniversityPage extends React.Component{
+class LocationPage extends React.Component{
 
     render() {
         return (
@@ -20,4 +20,4 @@ class UniversityPage extends React.Component{
 
 }
 
-export default UniversityPage;
+export default LocationPage;
