@@ -6,7 +6,7 @@ const BrandingBarPages = () =>{
     return (
         <header>
 
-            <div className="w-screen h-20 bae-header-grey header-bar">
+            <div className="w-screen h-20 bae-header-grey header-bar" id={"header-bar"}>
 
                 <div className="flex flex-row p-5 header-bar-container justify-center">
                     <div className="px-4 left-0 absolute h-10 w-auto">

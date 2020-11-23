@@ -8,8 +8,6 @@ class HomePage extends React.Component{
 
     render() {
 
-        console.log("home");
-
         return (
             <div className="h-full w-full">
                 <TitleBar />

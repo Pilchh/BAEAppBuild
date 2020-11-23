@@ -46,13 +46,31 @@ class TitleBar extends React.Component{
         }
 
         window.addEventListener("resize", checkResizeButton);
+
+        document.addEventListener("keypress", event => {
+
+
+            if (event.key === "f" && event.repeat === false) {
+                if (remote.getCurrentWindow().fullScreen === true){
+                    remote.getCurrentWindow().fullScreen = false;
+                    document.body.classList.remove('maximized');
+
+                }
+                else {
+                    remote.getCurrentWindow().fullScreen = true;
+                    document.body.classList.add('maximized');
+                }
+
+            }
+
+        });
     }
 
     render() {
 
 
         return (
-            <header id="titlebar">
+            <header id="titlebar" className={"visible"}>
                 <div id="drag-region">
                     <div id="window-controls">
 
