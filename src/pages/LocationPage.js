@@ -1,7 +1,7 @@
 import React from "react";
 import '../index.css';
 import TitleBar from "../components/TitleBar";
-import BrandingBarPages from "./BrandingBarPages";
+import BrandingBarPages from "../components/BrandingBarPages";
 
 class LocationPage extends React.Component{
 

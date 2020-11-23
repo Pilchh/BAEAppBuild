@@ -50,12 +50,12 @@ class TitleBar extends React.Component{
 
 
             if (event.key === "f" && event.repeat === false) {
-                if (remote.getCurrentWindow().fullScreen === true){
-                    remote.getCurrentWindow().fullScreen = false;
+                if (BrowserWindow.getFocusedWindow().fullScreen === true){
+                    BrowserWindow.getFocusedWindow().fullScreen = false;
 
                 }
                 else {
-                    remote.getCurrentWindow().fullScreen = true;
+                    BrowserWindow.getFocusedWindow().fullScreen = true;
                 }
 
             }

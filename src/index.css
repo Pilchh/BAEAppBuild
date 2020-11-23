@@ -176,7 +176,7 @@
 }
 
 .max-size {
-  height: calc(100vh - 104px);
+  height: calc(100vh - 6rem - 24px);
   width: 100%;
 }
 
