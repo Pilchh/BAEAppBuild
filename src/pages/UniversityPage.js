@@ -2,6 +2,7 @@ import React from "react";
 import '../index.css';
 import TitleBar from "../components/TitleBar";
 import BrandingBarPages from "../components/BrandingBarPages";
+import PageContent from "../components/PageContent";
 
 class UniversityPage extends React.Component{
 
@@ -12,6 +13,7 @@ class UniversityPage extends React.Component{
                 <TitleBar />
                 <BrandingBarPages />
 
+                <PageContent title={"University"} imageOne={"glasses.jpg"} imageTwo={"glasses.jpg"}/>
             </div>
         );
     }

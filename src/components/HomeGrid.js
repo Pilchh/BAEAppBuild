@@ -17,7 +17,7 @@ class HomeGrid extends React.Component{
                             <GridElement title="Locations" description="The apprenticeship is hosted at a number of locations." imageName="glasses.jpg" redirectName="locations"/>
                         </div>
                         <div className={"w-1/5 grid-item-height flex flex-col relative"}>
-                            <GridElement title="University" description="You will obtain a degree in Software Engineering." imageName="aircraft.jpg" redirectName="university"/>
+                            <GridElement title="University" description="You will obtain a degree in Software Engineering." imageName="universityMain.jpg" redirectName="university"/>
                         </div>
                         <div className={"w-1/5 grid-item-height flex flex-col relative"}>
                             <GridElement title="Qualifications" description="You will need certain qualifications in order to apply." imageName="australia.jpg" redirectName="qualifications"/>
